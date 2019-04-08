@@ -47,21 +47,48 @@ class App extends Component{
             <div>
 
 
-              <Link activeClass="active" className="about" to="about" spy={true} smooth={true} duration={500} >
-                <FontAwesomeIcon className="icon" icon={['far', 'user']} size="3x"/>
-              </Link>
 
-              <Link activeClass="active" className="portfolio" to="portfolio" spy={true} smooth={true} duration={500} >
-                <FontAwesomeIcon className="icon" icon={['far', 'file-code']} size="3x" />
-              </Link>
+                <table>
+                  <tr>
+                    <th className="AboutIcon">
+                    <Link activeClass="active" className="about" to="about" spy={true} smooth={true} duration={500} >
+                      <FontAwesomeIcon className="icon" icon={['far', 'user']} size="3x"/>
+                    </Link>
+                    </th>
 
-              <Link activeClass="active" className="skills" to="skills" spy={true} smooth={true} duration={500} >
-                <FontAwesomeIcon className="icon" icon={['far', 'keyboard']} size="3x" />
-              </Link>
+                    <th>
+                    <Link activeClass="active" className="portfolio" to="portfolio" spy={true} smooth={true} duration={500} >
+                      <FontAwesomeIcon className="icon" icon={['far', 'file-code']} size="3x" />
+                    </Link>
+                    </th>
 
-              <Link activeClass="active" className="contact" to="contact" spy={true} smooth={true} duration={500} >
-                <FontAwesomeIcon className="icon" icon={['far', 'envelope']} size="3x" />
-              </Link>
+                    <th>
+                    <Link activeClass="active" className="skills" to="skills" spy={true} smooth={true} duration={500} >
+                      <FontAwesomeIcon className="icon" icon={['far', 'keyboard']} size="3x" />
+                    </Link>
+                    </th>
+
+                    <th>
+                    <Link activeClass="active" className="contact" to="contact" spy={true} smooth={true} duration={500} >
+                      <FontAwesomeIcon className="icon" icon={['far', 'envelope']} size="3x" />
+                    </Link>
+                    </th>
+                  </tr>
+
+                  <tr>
+                    <td className="AboutIcon"> about </td>
+                    <td> portfolio </td>
+                    <td> skills </td>
+                    <td> contact </td>
+                  </tr>
+                </table>
+
+
+
+
+
+
+
 
 
 
@@ -83,12 +110,10 @@ class App extends Component{
         </div>
         <div className="NavBarColorSeperator" ></div>
 
+        <br/><br/><br/>
 
-        <div className="VerticalSpacer"></div>
 
-        <div>
           <section className="About element" name="about">
-
             <span className="aboutImg">
               <div className="VerticalSpacer"></div>
               <img src={face} alt="me!"/>
@@ -103,33 +128,44 @@ class App extends Component{
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
             </span>
           </section>
-        </div>
 
 
-        <div>
+          <div className="VerticalSpacer"></div>
+
+
           <div className="Portfolio  element" name="portfolio">
-          <div className="SectionHeader">
-            (Portfolio)
+            <div className="SectionHeader">
+              (Portfolio)
+            </div>
+
+            <span className="PortfolioGifs">
+                Gif1
+                Gif2
+                Gif3
+            </span>
           </div>
-            Portfolio section
+
+        <div className="VerticalSpacer"></div>
 
 
-
-          </div>
-
-
-
-        </div>
 
 
 
 
         <div className="Skills  element" name="skills">
-          Skills section
+          <div className="SectionHeader">
+            (Skills)
+          </div>
+
         </div>
 
+
+
         <div className="Contact  element" name="contact">
-          Contact section
+          <div className="SectionHeader">
+            (Contact)
+          </div>
+
         </div>
 
 

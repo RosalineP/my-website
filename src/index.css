@@ -36,6 +36,12 @@ header{
   margin-left: 1em;
 }
 
+td{
+  text-align: center;
+  color: #FFBCBF;
+}
+
+
 .NavBar{
   font-family: 'Source Code Pro', monospace;
   font-weight: 300;
@@ -70,13 +76,13 @@ header{
   font-family: 'Source Code Pro', monospace;
   font-weight: 400;
   display: flex;
-  height: 80vh;
+  /* height: 80vh; */
   /* font-family: "Droid Sans"; */
 }
 
 img{
   width: auto;
-  height: 70%;
+  height: 60vh;
 }
 
 .aboutImg{
@@ -92,16 +98,27 @@ img{
 }
 
 
-.icon:hover {
+/* .icon:hover {
   color: #FFFDAF;
+} */
+
+
+.AboutIcon:hover{
+  color:black;
 }
 
 .navOption:hover{
-  color: #FFFDAF;
+  color: #F4CD2A;
 }
 
 .Portfolio{
-  color: #F77F00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.PortfolioGifs{
+  display: flex;
 }
 
 .Skills{
@@ -113,7 +130,7 @@ img{
 }
 
 .VerticalSpacer{
-  height: 10vh;
+  height: 15vh;
 }
 
 
