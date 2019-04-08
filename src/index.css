@@ -1,14 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500');
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
+  font-family: monospace;
+
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+header{
+  font-family: "Bookman Old Style" monospace;
+  height: 100vh;
+  /* background-image: url(enter your photo url here!); */
+  /* background-color: #EAA0A2; */
+  background-color: #FFBCBF;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-size: cover;
+  /* margin-bottom: 0px; */
+}
+
+.icon{
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.NavBar{
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
+  background-color: #3A4664;
+  color: white;
+  height: 5vh;
+  display: flex;
+  align-items: center; /* align vertical */
+  padding-left: 7%;
+}
+
+.SectionHeader{
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 500;
+  font-size: 35px;
+  color: #443542;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+
+}
+
+.NavBarColorSeperator{
+  height: 3px;
+  background-color: #AAAAAA;
+}
+
+.About{
+  color: #443542;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  display: flex;
+  height: 80vh;
+  /* font-family: "Droid Sans"; */
+}
+
+img{
+  width: auto;
+  height: 70%;
+}
+
+.aboutImg{
+  padding-left: 3%;
+}
+
+.aboutText{
+  font-size: 130%;
+  padding-right: 10%;
+  padding-left: 10%;
+  word-wrap:break-word;
+  overflow: auto;
+}
+
+
+.icon:hover {
+  color: #FFFDAF;
+}
+
+.navOption:hover{
+  color: #FFFDAF;
+}
+
+.Portfolio{
+  color: #F77F00;
+}
+
+.Skills{
+  color: #FCBF49;
+}
+
+.Contact{
+  color: #EAE2B7;
+}
+
+.VerticalSpacer{
+  height: 10vh;
+}
+
+
+
+.HorizontalSpacer{
+  padding-right: 3%;
 }

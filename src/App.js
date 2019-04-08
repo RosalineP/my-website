@@ -1,6 +1,14 @@
+// THIS ISN'T BEING USED
+
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+// ==================================================================================
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faIgloo } from '@fortawesome/free-solid-svg-icons'
+// ==================================================================================
+library.add(faIgloo)
 
 class App extends Component {
   render() {
@@ -22,6 +30,39 @@ class App extends Component {
         </header>
       </div>
     );
+  }
+}
+
+class App1 extends Component{
+  render(){
+    return(
+      <div>
+        <div>
+          <header>
+            <h1> Rosaline P </h1>
+            <p> Title/intro </p>
+            <div> <FontAwesomeIcon icon="igloo" /> icon2 icon3 </div>
+          </header>
+        </div>
+
+        <div className="About">
+        <i class="far fa-user"></i>
+          About
+        </div>
+
+        <div className="Portfolio">
+          Portfolio
+        </div>
+
+        <div className="Skills">
+          Skills
+        </div>
+
+        <div className="Contact">
+          Contact
+        </div>
+      </div>
+    )
   }
 }
 
