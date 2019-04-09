@@ -38,7 +38,6 @@ header{
 
 td{
   text-align: center;
-  color: #FFBCBF;
 }
 
 
@@ -98,14 +97,31 @@ img{
 }
 
 
-/* .icon:hover {
-  color: #FFFDAF;
-} */
-
-
-.AboutIcon:hover{
-  color:black;
+.IconList{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.IconText{
+  color:#FFBCBF;
+}
+
+.NavIcon{
+  display: inline-block;
+}
+
+table{
+  display: inline-block;
+}
+
+.NavIcon:hover .IconText{
+  color: #FFFDAF;
+}
+.NavIcon:hover{
+  color: #FFFDAF;
+}
+
 
 .navOption:hover{
   color: #F4CD2A;

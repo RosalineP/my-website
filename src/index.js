@@ -44,57 +44,74 @@ class App extends Component{
             <h1> Rosaline P. </h1>
             <p> Jr. Web Developer </p>
             <br/><br/>
-            <div>
 
 
+            <span className="IconList">
 
-                <table>
+                <table className="NavIcon">
+                <tbody>
                   <tr>
-                    <th className="AboutIcon">
+                    <th>
                     <Link activeClass="active" className="about" to="about" spy={true} smooth={true} duration={500} >
                       <FontAwesomeIcon className="icon" icon={['far', 'user']} size="3x"/>
                     </Link>
                     </th>
+                  </tr>
+                  <tr>
+                    <th className="Icon IconText"> about </th>
+                  </tr>
+                </tbody>
+                </table>
 
+                <table className="NavIcon">
+                <tbody>
+                  <tr>
                     <th>
                     <Link activeClass="active" className="portfolio" to="portfolio" spy={true} smooth={true} duration={500} >
                       <FontAwesomeIcon className="icon" icon={['far', 'file-code']} size="3x" />
                     </Link>
                     </th>
+                  </tr>
+                  <tr>
+                    <th className="Icon IconText"> portfolio </th>
+                  </tr>
+                </tbody>
+                </table>
 
+                <table className="NavIcon">
+                <tbody>
+                  <tr>
                     <th>
                     <Link activeClass="active" className="skills" to="skills" spy={true} smooth={true} duration={500} >
                       <FontAwesomeIcon className="icon" icon={['far', 'keyboard']} size="3x" />
                     </Link>
                     </th>
+                  </tr>
+                  <tr>
+                    <th className="Icon IconText"> skills </th>
+                  </tr>
+                </tbody>
+                </table>
 
+                <table className="NavIcon">
+                <tbody>
+                  <tr>
                     <th>
                     <Link activeClass="active" className="contact" to="contact" spy={true} smooth={true} duration={500} >
                       <FontAwesomeIcon className="icon" icon={['far', 'envelope']} size="3x" />
                     </Link>
                     </th>
                   </tr>
-
                   <tr>
-                    <td className="AboutIcon"> about </td>
-                    <td> portfolio </td>
-                    <td> skills </td>
-                    <td> contact </td>
+                    <th className="Icon IconText"> contact </th>
                   </tr>
+                </tbody>
                 </table>
 
+            </span>
 
-
-
-
-
-
-
-
-
-
-            </div>
           </header>
+
         </div>
 
         <div className="NavBar">
