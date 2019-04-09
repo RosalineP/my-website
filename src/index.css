@@ -14,6 +14,7 @@ code {
     monospace;
 }
 
+/* ============= Header Content Styling ====================== */
 
 header{
   font-family: "Bookman Old Style" monospace;
@@ -26,9 +27,7 @@ header{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   background-size: cover;
-  /* margin-bottom: 0px; */
 }
 
 .icon{
@@ -36,10 +35,25 @@ header{
   margin-left: 1em;
 }
 
-td{
-  text-align: center;
+.IconText{
+  color:#FFBCBF;
 }
 
+.NavIcon{
+  display: inline-block;
+}
+
+.NavIcon:hover .IconText{
+  color: #FFFDAF;
+  cursor:default;
+}
+.NavIcon:hover{
+  color: #FFFDAF;
+  cursor: pointer;
+}
+
+
+/* ============= NavBar Content Styling ====================== */
 
 .NavBar{
   font-family: 'Source Code Pro', monospace;
@@ -52,6 +66,18 @@ td{
   padding-left: 7%;
 }
 
+.navOption:hover{
+  color: #F4CD2A;
+  cursor: pointer;
+}
+
+.NavBarColorSeperator{
+  height: 3px;
+  background-color: #AAAAAA;
+}
+
+/* ============= About Section Styling ======================= */
+
 .SectionHeader{
   font-family: 'Source Code Pro', monospace;
   font-weight: 500;
@@ -62,21 +88,14 @@ td{
   align-items: center;
   justify-content: center;
   height: 15vh;
-
 }
 
-.NavBarColorSeperator{
-  height: 3px;
-  background-color: #AAAAAA;
-}
 
 .About{
   color: #443542;
   font-family: 'Source Code Pro', monospace;
   font-weight: 400;
   display: flex;
-  /* height: 80vh; */
-  /* font-family: "Droid Sans"; */
 }
 
 img{
@@ -96,36 +115,8 @@ img{
   overflow: auto;
 }
 
+/* ============= Portfolio Section Styling ======================= */
 
-.IconList{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.IconText{
-  color:#FFBCBF;
-}
-
-.NavIcon{
-  display: inline-block;
-}
-
-table{
-  display: inline-block;
-}
-
-.NavIcon:hover .IconText{
-  color: #FFFDAF;
-}
-.NavIcon:hover{
-  color: #FFFDAF;
-}
-
-
-.navOption:hover{
-  color: #F4CD2A;
-}
 
 .Portfolio{
   display: flex;
