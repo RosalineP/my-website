@@ -17,22 +17,25 @@ import { faEnvelope,
          faUser,
          faKeyboard,
          faFileCode,
-         faFolderOpen,
          faCircle as farCircle
          } from '@fortawesome/free-regular-svg-icons'
 
-import {faCircle as fasCircle} from '@fortawesome/free-solid-svg-icons'
+import {faCircle as fasCircle, faEnvelope as fasEnvelope} from '@fortawesome/free-solid-svg-icons'
+import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 library.add(
          faEnvelope,
          faUser,
          faKeyboard,
          faFileCode,
-         faFolderOpen,
          fasCircle,
-         farCircle
+         farCircle,
+         faGithubSquare,
+         faLinkedin,
+         fasEnvelope
 )
 // ==================================================================================
+
 class App extends Component{
 
 
@@ -82,25 +85,18 @@ class App extends Component{
               </center>
             </div>
           </div>
-
-
-
           </header>
-
         </div>
 
-        <div className="NavBar">
 
-        <Link activeClass="active" className="about navOption HorizontalSpacer" to="about" spy={true} smooth={true} duration={500} >About</Link>
-        <Link activeClass="active" className="portfolio navOption HorizontalSpacer" to="portfolio" spy={true} smooth={true} duration={500} >Portfolio</Link>
-        <Link activeClass="active" className="skills navOption HorizontalSpacer" to="skills" spy={true} smooth={true} duration={500} >Skills</Link>
-        <Link activeClass="active" className="contact navOption HorizontalSpacer" to="contact" spy={true} smooth={true} duration={500} >Contact</Link>
-
-
-
-
+        <div className="NavBar" id="NavBar">
+          <Link activeClass="active" className="about navOption HorizontalSpacer" to="about" spy={true} smooth={true} duration={500} >About</Link>
+          <Link activeClass="active" className="portfolio navOption HorizontalSpacer" to="portfolio" spy={true} smooth={true} duration={500} >Portfolio</Link>
+          <Link activeClass="active" className="skills navOption HorizontalSpacer" to="skills" spy={true} smooth={true} duration={500} >Skills</Link>
+          <Link activeClass="active" className="contact navOption HorizontalSpacer" to="contact" spy={true} smooth={true} duration={500} >Contact</Link>
         </div>
         <div className="NavBarColorSeperator" ></div>
+
 
         <br/><br/><br/>
 
@@ -149,8 +145,42 @@ class App extends Component{
             (Skills)
           </div>
 
+        <table className="aboutText SkillsTable" id="SkillsTable">
+        <tbody>
+          <tr>
+            <td> CSS </td>
+            <td> JavaScript </td>
+            <td> Node.js </td>
+            <td> Python </td>
+          </tr>
+
+          <tr>
+            <td> HTML </td>
+            <td> React </td>
+            <td> Express </td>
+            <td> Java </td>
+          </tr>
+
+          <tr>
+            <td> BootStrap </td>
+            <td> jQuery </td>
+            <td> MongoDB </td>
+            <td> Github </td>
+          </tr>
+
+          <tr>
+            <td>  </td>
+            <td> Flask </td>
+            <td> MySQL </td>
+            <td> Selenium </td>
+          </tr>
+
+        </tbody>
+        </table>
+
         </div>
 
+        <div className="VerticalSpacer"></div>
 
 
         <div className="Contact  element" name="contact">
@@ -158,8 +188,59 @@ class App extends Component{
             (Contact)
           </div>
 
+          <div className="aboutText ContactTable">
+            <table>
+              <tbody>
+              <tr>
+                <td>
+                  <a href="mailto:rpyktel@gmail.com" className="contactLinks" >
+                    <FontAwesomeIcon className="icon" icon={['fas', 'envelope']} size="3x"/>
+                  </a>
+                </td>
+                <td>
+                  <a href="mailto:rpyktel@gmail.com" className="contactLinks">
+                    rpyktel@gmail.com
+                  </a>
+
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <a href="https://www.linkedin.com/in/rosaline-pyktel/" className="contactLinks">
+                    <FontAwesomeIcon className="icon" icon={['fab', 'linkedin']} size="3x"/>
+                  </a>
+                </td>
+                <td>
+                  <a href="https://www.linkedin.com/in/rosaline-pyktel/" className="contactLinks">
+                    linkedin.com/in/rosaline-pyktel
+                  </a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <a href="https://github.com/RosalineP" className="contactLinks">
+                    <FontAwesomeIcon className="icon" icon={['fab', 'github-square']} size="3x"/>
+                  </a>
+                </td>
+                <td>
+                  <a href="https://github.com/RosalineP" className="contactLinks">
+                    github.com/RosalineP
+                  </a>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
+        <div className="VerticalSpacer"></div>
+        <div className="VerticalSpacer"></div>
+
+        <div className="NavBarColorSeperator"></div>
+        <footer>
+        </footer>
 
 
       </div>

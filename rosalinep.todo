@@ -1,40 +1,55 @@
 Stying:
   ☐ make capitalization consistent
   Color:
-    ☐ Choose color layout
-    ☐ https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b7
-    ☐ https://refactoring-ui.nyc3.cdn.digitaloceanspaces.com/previews/whats-in-a-color-palette-01.png
+    ✔ Choose color layout @done(2019-04-09 16:44) @project(Stying / Color)
+    ✔ https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b7 @done(2019-04-09 16:44) @project(Stying / Color)
+    ✔ https://refactoring-ui.nyc3.cdn.digitaloceanspaces.com/previews/whats-in-a-color-palette-01.png @done(2019-04-09 16:44) @project(Stying / Color)
   Font:
-    ☐ https://www.w3schools.com/cssref/css_websafe_fonts.asp
-    ☐ https://www.w3schools.com/Css/css3_fonts.asp
-    ☐ https://www.balbooa.com/knowledgebase/32-documentation-faq-joomla/176-how-to-add-custom-font-to-website-through-fontface
+    ✔ https://www.w3schools.com/cssref/css_websafe_fonts.asp @done(2019-04-09 16:43) @project(Stying / Font)
+    ✔ https://www.w3schools.com/Css/css3_fonts.asp @done(2019-04-09 16:43) @project(Stying / Font)
+    ✔ https://www.balbooa.com/knowledgebase/32-documentation-faq-joomla/176-how-to-add-custom-font-to-website-through-fontface @done(2019-04-09 16:43) @project(Stying / Font)
   ☐ Choose font
 Functionality:
-  ☐ icon buttons
+  ✔ icon buttons @done(2019-04-09 16:43) @project(Functionality)
   ☐ animate on hover: https://monkeyraptor.johanpaul.net/2013/05/start-animating-animated-gif-on-hover.html
   ☐ get a custom domain - https://devcenter.heroku.com/articles/custom-domains
   ☐ https://domains.google.com/m/registrar/search?searchTerm=rosalinep&hl=en#
   ☐ do something about the overflow
+  Contact:
+    ☐ make sure email link works
+    ☐ decide on hover animations
+
+
+Content:
+  About:
+
+  Skills:
+    Front-end
+      Bootstrap
+      html
+      css
+
+    Middle??
+      React
+      jQuery
+      JavaScript
+      Flask
+
+    Back
+      Node.js
+      MongoDB
+      MySQL
+      Python
+      Java
+
+    Other
+      Github
 
 
 
-              <FontAwesomeIcon icon={['far', 'envelope']} transform="shrink-6" mask={['fas', 'circle']} size="4x" />
-
-              <span className="fa-layers fa-fw">
-                <FontAwesomeIcon icon={['far', 'envelope']} size="2x" transform="shrink-3 right-4"/>
-                <FontAwesomeIcon icon={['far', 'circle']} size="3x" />
-              </span>
-
-
-
-
-              soft scroll:
-                          <span onClick={() => scrollToComponent(this.Contact, { offset: 0, align: 'top', duration: 1000})}>
-                            Contact
-                          </span>
-
-                          ....
-
-                          <div className="Contact VerticalSpacer" ref={(section) => { this.Contact = section; }}>
-                            Contact section
-                          </div>
+  Portfolio:
+    Mydevportfol.io is built using Angular2+, with a node backend for handling API requests, and runs on Heroku. Payments are handled via Stripe, Firebase provides the database solution and Bootstrap3 is the CSS framework of choice for this project
+    The Slack bot interacts with a Node.js app living on Heroku, which requests information from a free domain-checking api, parses the response, and delivers a colour-coded response back to the client.
+    Jobbie uses Bootstrap3 for a mobile-first layout, with jQuery for easy page manipulation. On the backend an Express/Node.js app lives on a Heroku dyno that acts as a middleware to scrape job sites and return the information to the user.
+    On the backend Vistory uses an Express/Node.js app on Heroku to handle user accounts and authentication, while a remote noSQL database sits on Cloudant for backing up user data
+    A Node.js server hosted on Heroku acts as a middle-man, handling backend logic and database updates within Firebase

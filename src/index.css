@@ -14,6 +14,19 @@ code {
     monospace;
 }
 
+.contactLinks {
+  color: #443542;
+  text-decoration: none; /* no underline */
+}
+
+.centered{
+  align: center;
+}
+
+.offGrey{
+  color: #443542;
+}
+
 /* ============= Header Content Styling ====================== */
 
 header{
@@ -47,15 +60,19 @@ header{
   color: #FFFDAF;
   cursor:default;
 }
-.NavIcon:hover{
+.NavIcon:hover .icon{
   color: #FFFDAF;
   cursor: pointer;
 }
 
 
+
 /* ============= NavBar Content Styling ====================== */
 
 .NavBar{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
   font-family: 'Source Code Pro', monospace;
   font-weight: 300;
   background-color: #3A4664;
@@ -129,19 +146,54 @@ img{
 }
 
 .Skills{
-  color: #FCBF49;
+  color: #443542;
 }
 
-.Contact{
-  color: #EAE2B7;
+.SkillsTable{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-spacing: 3em 0px;
 }
+
+#SkillsTable td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* ============= Contact Section Styling ======================= */
+
+.Contact{
+  color: #443542;
+}
+
+.ContactTable{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .VerticalSpacer{
   height: 15vh;
 }
 
-
-
 .HorizontalSpacer{
-  padding-right: 3%;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+}
+
+.HorizontalSpacer2{
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+/* ============= Contact Section Styling ======================= */
+
+footer{
+  height: 40px;
+  background-color: #3A4664;
 }
