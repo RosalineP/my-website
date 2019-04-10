@@ -5,7 +5,7 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import logo from './logo.svg';
 import face from './myFace.png';
-import compy from './compy3.gif';
+import compy from './compy.gif';
 
 
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
@@ -116,7 +116,6 @@ class App extends Component{
               </div>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
               <br/><br/>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
             </span>
           </section>
 
@@ -192,20 +191,20 @@ class App extends Component{
             (Contact)
           </div>
 
-          <div className="aboutText ContactTable">
-            <table>
+          <div className="aboutText">
+
+            <table className="ContactTable">
               <tbody>
-              <tr>
+              <tr className = "PinkOut">
                 <td>
                   <a href="mailto:rpyktel@gmail.com" className="contactLinks" >
                     <FontAwesomeIcon className="icon" icon={['fas', 'envelope']} size="3x"/>
                   </a>
                 </td>
                 <td>
-                  <a href="mailto:rpyktel@gmail.com" className="contactLinks">
+                  <a href="mailto:rpyktel@gmail.com" className="contactLinks underline">
                     rpyktel@gmail.com
                   </a>
-
                 </td>
               </tr>
 
@@ -216,7 +215,7 @@ class App extends Component{
                   </a>
                 </td>
                 <td>
-                  <a href="https://www.linkedin.com/in/rosaline-pyktel/" className="contactLinks">
+                  <a href="https://www.linkedin.com/in/rosaline-pyktel/" className="contactLinks underline">
                     linkedin.com/in/rosaline-pyktel
                   </a>
                 </td>
@@ -229,13 +228,14 @@ class App extends Component{
                   </a>
                 </td>
                 <td>
-                  <a href="https://github.com/RosalineP" className="contactLinks">
+                  <a href="https://github.com/RosalineP" className="contactLinks underline">
                     github.com/RosalineP
                   </a>
                 </td>
               </tr>
               </tbody>
             </table>
+
           </div>
         </div>
 

@@ -58,7 +58,7 @@ header{
 
 .NavIcon:hover .IconText{
   color: #FFFDAF;
-  cursor:default;
+  cursor: default;
 }
 .NavIcon:hover .icon{
   color: #FFFDAF;
@@ -199,4 +199,42 @@ img{
 footer{
   height: 40px;
   background-color: #3A4664;
+}
+
+.PinkOut:hover{
+  color: red;
+}
+
+table.ContactTable tr:hover .icon {
+color: #FFBCBF;
+}
+
+.underline {
+  position: relative;
+  color: #443542;
+  text-decoration: none;
+}
+
+.underline:hover {
+  color: #443542;
+}
+
+.underline:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFBCBF;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.underline:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
