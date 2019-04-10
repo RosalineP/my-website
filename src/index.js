@@ -5,6 +5,7 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import logo from './logo.svg';
 import face from './myFace.png';
+import compy from './compy3.gif';
 
 
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
@@ -102,12 +103,14 @@ class App extends Component{
 
 
           <section className="About element" name="about">
+            <div className="VerticalSpacer"></div>
             <span className="aboutImg">
-              <div className="VerticalSpacer"></div>
-              <img src={face} alt="me!"/>
+              <div className="VerticalSpacer2"></div>
+              <img src={compy} alt="me!"/>
             </span>
 
             <span className="aboutText">
+              <div className="VerticalSpacer2"></div>
               <div className="SectionHeader">
               (About)
               </div>
@@ -122,6 +125,7 @@ class App extends Component{
 
 
           <div className="Portfolio  element" name="portfolio">
+            <div className="VerticalSpacer2"></div>
             <div className="SectionHeader">
               (Portfolio)
             </div>

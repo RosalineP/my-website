@@ -180,6 +180,9 @@ img{
 .VerticalSpacer{
   height: 15vh;
 }
+.VerticalSpacer2{
+  height: 8vh;
+}
 
 .HorizontalSpacer{
   padding-right: 1.5%;
