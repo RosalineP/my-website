@@ -3,14 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
-import logo from './logo.svg';
-import face from './myFace.png';
 import compy from './compy.gif';
+import daybyday from './daybyday.gif';
 
 
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link } from 'react-scroll'
 
-import scrollToComponent from 'react-scroll-to-component';
 // ==================================================================================
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -104,17 +102,21 @@ class App extends Component{
 
           <section className="About element" name="about">
             <div className="VerticalSpacer"></div>
-            <span className="aboutImg">
-              <div className="VerticalSpacer2"></div>
-              <img src={compy} alt="me!"/>
+            <span className="ImgPad">
+              <div className="VerticalSpacer"></div> <br/><br/><br/><br/>
+              <img className="compy" src={compy} alt="me!"/>
             </span>
 
-            <span className="aboutText">
+            <span className="bodyText aboutText">
               <div className="VerticalSpacer2"></div>
               <div className="SectionHeader">
               (About)
               </div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Hello! My name is Rosaline Pyktel, and I’m a programmer based in Seattle. I’m a passionate and creative developer, and I want to help companies grow by using innovative technologies to create intuitive, reactive, and elegant user experiences.
+              <br/><br/>
+              While I love designing and building with front-end tools such as React and jQuery, I’m also comfortable with back-end tech such as NodeJS, MongoDB, and MySQL.
+              <br/><br/>
+              In my spare time, you’ll find me writing scifi short stories and enjoying Seattle’s gloomy weather.
               <br/><br/>
             </span>
           </section>
@@ -128,12 +130,28 @@ class App extends Component{
             <div className="SectionHeader">
               (Portfolio)
             </div>
+            <div className="VerticalSpacer2"></div>
 
             <span className="PortfolioGifs">
-                Gif1
-                Gif2
-                Gif3
+
+
+                <div className="About">
+                  <img className="ImgPad" src={daybyday} alt="DayByDay"/>
+
+                  <div className="bodyText portText">
+                  <br/>
+                  DayByDay is a productivity webapp that handles task management, calendar event scheduling, and time tracking, with an emphasis on distributing personal workloads evenly over time.
+                  <br/><br/>
+                  DayByDay is built with jQuery and Bootstrap, with a Flask backend for handling API requests, and a SQL database to store user data.
+                  <br/><br/>
+                  Migration from private server in progress!
+                  </div>
+                </div>
+
+
+
             </span>
+
           </div>
 
         <div className="VerticalSpacer"></div>
@@ -141,14 +159,13 @@ class App extends Component{
 
 
 
-
-
         <div className="Skills  element" name="skills">
+          <div className="VerticalSpacer2"></div>
           <div className="SectionHeader">
             (Skills)
           </div>
 
-        <table className="aboutText SkillsTable" id="SkillsTable">
+        <table className="bodyText SkillsTable" id="SkillsTable">
         <tbody>
           <tr>
             <td> CSS </td>
@@ -191,7 +208,7 @@ class App extends Component{
             (Contact)
           </div>
 
-          <div className="aboutText">
+          <div className="bodyText">
 
             <table className="ContactTable">
               <tbody>
@@ -249,29 +266,6 @@ class App extends Component{
 
       </div>
     )
-  }
-}
-class App1 extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
   }
 }
 

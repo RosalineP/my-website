@@ -1,5 +1,6 @@
 Stying:
   ☐ make capitalization consistent
+  ☐ edit the github landing page
   Color:
     ✔ Choose color layout @done(2019-04-09 16:44) @project(Stying / Color)
     ✔ https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b7 @done(2019-04-09 16:44) @project(Stying / Color)
@@ -8,47 +9,19 @@ Stying:
     ✔ https://www.w3schools.com/cssref/css_websafe_fonts.asp @done(2019-04-09 16:43) @project(Stying / Font)
     ✔ https://www.w3schools.com/Css/css3_fonts.asp @done(2019-04-09 16:43) @project(Stying / Font)
     ✔ https://www.balbooa.com/knowledgebase/32-documentation-faq-joomla/176-how-to-add-custom-font-to-website-through-fontface @done(2019-04-09 16:43) @project(Stying / Font)
-  ☐ Choose font
+  ✔ Choose font @done(2019-04-10 17:10) @project(Stying)
 Functionality:
   ✔ icon buttons @done(2019-04-09 16:43) @project(Functionality)
-  ☐ animate on hover: https://monkeyraptor.johanpaul.net/2013/05/start-animating-animated-gif-on-hover.html
+  ✔ animate on hover: https://monkeyraptor.johanpaul.net/2013/05/start-animating-animated-gif-on-hover.html @done(2019-04-10 17:10) @project(Functionality)
   ☐ get a custom domain - https://devcenter.heroku.com/articles/custom-domains
   ☐ https://domains.google.com/m/registrar/search?searchTerm=rosalinep&hl=en#
   ☐ do something about the overflow
   Contact:
-    ☐ make sure email link works
-    ☐ decide on hover animations
+    ✔ make sure email link works @done(2019-04-10 17:10) @project(Functionality / Contact)
+    ✔ decide on hover animations @done(2019-04-10 17:10) @project(Functionality / Contact)
 
 
 Content:
-  About:
-
-  Skills:
-    Front-end
-      Bootstrap
-      html
-      css
-
-    Middle??
-      React
-      jQuery
-      Express
-      Flask
-      JavaScript
-
-    Back
-      Node.js
-      MongoDB
-      MySQL
-
-    Other
-      Python
-      Java
-      Github
-      Selenium
-
-
-
   Portfolio:
     Mydevportfol.io is built using Angular2+, with a node backend for handling API requests, and runs on Heroku. Payments are handled via Stripe, Firebase provides the database solution and Bootstrap3 is the CSS framework of choice for this project
     The Slack bot interacts with a Node.js app living on Heroku, which requests information from a free domain-checking api, parses the response, and delivers a colour-coded response back to the client.

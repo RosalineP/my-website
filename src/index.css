@@ -9,22 +9,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 .contactLinks {
   color: #443542;
   text-decoration: none; /* no underline */
 }
 
-.centered{
-  align: center;
-}
-
-.offGrey{
-  color: #443542;
+.bodyText{
+  font-size: 130%;
+  word-wrap:break-word;
+  overflow: auto;
 }
 
 /* ============= Header Content Styling ====================== */
@@ -32,8 +25,6 @@ code {
 header{
   font-family: "Bookman Old Style" monospace;
   height: 100vh;
-  /* background-image: url(enter your photo url here!); */
-  /* background-color: #EAA0A2; */
   background-color: #FFBCBF;
   color: white;
   display: flex;
@@ -64,8 +55,6 @@ header{
   color: #FFFDAF;
   cursor: pointer;
 }
-
-
 
 /* ============= NavBar Content Styling ====================== */
 
@@ -107,7 +96,6 @@ header{
   height: 15vh;
 }
 
-
 .About{
   color: #443542;
   font-family: 'Source Code Pro', monospace;
@@ -115,21 +103,18 @@ header{
   display: flex;
 }
 
-img{
+.compy{
   width: auto;
-  height: 60vh;
+  height: 30vh;
 }
 
-.aboutImg{
+.ImgPad{
   padding-left: 3%;
 }
 
 .aboutText{
-  font-size: 130%;
   padding-right: 10%;
   padding-left: 10%;
-  word-wrap:break-word;
-  overflow: auto;
 }
 
 /* ============= Portfolio Section Styling ======================= */
@@ -141,9 +126,16 @@ img{
   align-items: center;
 }
 
-.PortfolioGifs{
-  display: flex;
+.portPic{
+  padding-left: 3%;
 }
+
+.portText{
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+/* ============= Skills Section Styling ======================= */
 
 .Skills{
   color: #443542;
@@ -163,6 +155,9 @@ img{
     vertical-align: middle;
 }
 
+.portPic{
+}
+
 /* ============= Contact Section Styling ======================= */
 
 .Contact{
@@ -176,7 +171,6 @@ img{
   justify-content: center;
 }
 
-
 .VerticalSpacer{
   height: 15vh;
 }
@@ -187,11 +181,6 @@ img{
 .HorizontalSpacer{
   padding-right: 1.5%;
   padding-left: 1.5%;
-}
-
-.HorizontalSpacer2{
-  padding-right: 5%;
-  padding-left: 5%;
 }
 
 /* ============= Contact Section Styling ======================= */
