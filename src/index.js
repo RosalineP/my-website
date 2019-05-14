@@ -4,6 +4,7 @@ import './index.css';
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
 import compy from './compy.gif';
+import fud from './fud.png'
 import daybyday from './daybyday.gif';
 
 
@@ -117,7 +118,6 @@ class App extends Component{
               While I love designing and building with front-end tools such as React and jQuery, I’m also comfortable with back-end tech such as NodeJS, MongoDB, and MySQL.
               <br/><br/>
               In my spare time, you’ll find me writing scifi short stories and enjoying Seattle’s gloomy weather.
-              <br/><br/>
             </span>
           </section>
 
@@ -132,19 +132,37 @@ class App extends Component{
             </div>
             <div className="VerticalSpacer2"></div>
 
-            <span className="PortfolioGifs">
-
+            <span>
 
                 <div className="About">
-                  <img className="ImgPad" src={daybyday} alt="DayByDay"/>
+                  <a href="http://www.fudplan.com/">
+                    <img className="ImgPad fudPic" src={fud} alt="fud"/>
+                  </a>
 
                   <div className="bodyText portText">
-                  <br/>
-                  DayByDay is a productivity webapp that handles task management, calendar event scheduling, and time tracking, with an emphasis on distributing personal workloads evenly over time.
-                  <br/><br/>
-                  DayByDay is built with jQuery and Bootstrap, with a Flask backend for handling API requests, and a SQL database to store user data.
-                  <br/><br/>
-                  Migration from private server in progress!
+                    <br/>
+                    Fud is a demo project geared towards food inventory management! Keep track of expiration dates, minimize spoilage, and keep track of your grocery list. Feel free to use the page as a sandbox to add and eat foods!
+                    <br/><br/>
+                    Füd uses ReactJS to update the DOM, Node.js to serve data upon API calls, and MongoDB to store user data. The stack is hosted on Heroku, with Google providing the custom DNS-configured domain.
+                    <br/><br/>
+                    This project is actively being built! Check it out at <a href="http://www.fudplan.com/" style={{ color: '#FFBCBF' }}>fudplan.com</a>.
+                  </div>
+                </div>
+
+                <br/><br/><br/><br/><br/>
+
+                <div className="About">
+                  <div>
+                    <img className="ImgPad" src={daybyday} alt="DayByDay"/>
+                  </div>
+
+                  <div className="bodyText portText">
+                    <br/>
+                    DayByDay is a productivity webapp that handles task management, calendar event scheduling, and time tracking, with an emphasis on distributing personal workloads evenly over time.
+                    <br/><br/>
+                    DayByDay is built with jQuery and Bootstrap, with a Flask backend for handling API requests, and a SQL database to store user data.
+                    <br/><br/>
+                    Migration from private server in progress!
                   </div>
                 </div>
 

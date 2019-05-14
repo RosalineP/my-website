@@ -1,6 +1,6 @@
 Stying:
   ☐ make capitalization consistent
-  ☐ edit the github landing page
+  ✔ edit the github landing page @done(2019-04-16 15:20) @project(Stying)
   Color:
     ✔ Choose color layout @done(2019-04-09 16:44) @project(Stying / Color)
     ✔ https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b7 @done(2019-04-09 16:44) @project(Stying / Color)
@@ -13,9 +13,10 @@ Stying:
 Functionality:
   ✔ icon buttons @done(2019-04-09 16:43) @project(Functionality)
   ✔ animate on hover: https://monkeyraptor.johanpaul.net/2013/05/start-animating-animated-gif-on-hover.html @done(2019-04-10 17:10) @project(Functionality)
-  ☐ get a custom domain - https://devcenter.heroku.com/articles/custom-domains
-  ☐ https://domains.google.com/m/registrar/search?searchTerm=rosalinep&hl=en#
-  ☐ do something about the overflow
+  ✔ get a custom domain - https://devcenter.heroku.com/articles/custom-domains @done(2019-04-16 12:28) @project(Functionality)
+  ✔ https://domains.google.com/m/registrar/search?searchTerm=rosalinep&hl=en# @done(2019-04-16 12:28) @project(Functionality)
+  ✔ do something about the overflow @done(2019-04-16 12:28) @project(Functionality)
+  ☐ Make sure rosalinep.com loads in reasonable amount of time
   Contact:
     ✔ make sure email link works @done(2019-04-10 17:10) @project(Functionality / Contact)
     ✔ decide on hover animations @done(2019-04-10 17:10) @project(Functionality / Contact)

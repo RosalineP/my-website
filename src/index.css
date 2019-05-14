@@ -130,6 +130,11 @@ header{
   padding-left: 3%;
 }
 
+.fudPic{
+  width: 37em;
+  height: auto;
+}
+
 .portText{
   padding-right: 5%;
   padding-left: 5%;
